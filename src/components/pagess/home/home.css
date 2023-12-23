@@ -1,0 +1,34 @@
+#video{
+    position:absolute;
+    width: 100%;
+    z-index: -1;
+   
+}
+
+.video-text{
+   position: relative;
+   top: 5rem;
+   left: 6rem;
+   font-weight: 700;
+   font-size:large;
+    
+}
+.video-text-pc{
+    position: relative;
+    top: 30rem;
+    left: 45rem;
+    font-weight: 700;
+    font-size:xx-large;
+ }
+#cards {
+position: relative;
+top: 10rem;
+display: flex;
+flex-wrap: wrap;
+justify-content: space-evenly;
+
+}
+#card-pc{
+    position: relative;
+    top:40rem;
+}

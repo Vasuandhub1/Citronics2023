@@ -1,5 +1,5 @@
 import React from "react";
-import "./Oraganizer.css";
+import "./oraganizer.css";
 import chairman from "./img/chairman.jpg";
 import director from "./img/Director.jpg";
 import principal from "./img/principal.jpg";

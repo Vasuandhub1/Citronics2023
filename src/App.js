@@ -16,6 +16,8 @@ import Sports from './components/pagess/Eventss/Sports/sports.jsx';
 import Advsports from './components/pagess/Eventss/Adventurus sports/advsports.jsx';
 import Photography from './components/pagess/Eventss/Photography/photography.jsx';
 import Quiz from './components/pagess/Eventss/Quiz/quiz.jsx';
+import Oraganizer from './components/pagess/Organizer/Oraganizer.jsx';
+import Registration from './components/pagess/registration/registration.jsx';
 import {RouterProvider, createBrowserRouter } from "react-router-dom";
 
 const router = createBrowserRouter([{path:"/",element: <Home/>},
@@ -32,7 +34,9 @@ const router = createBrowserRouter([{path:"/",element: <Home/>},
 {path:"/sports",element:<Sports/>},
 {path:"/advsports",element:<Advsports/>},
 {path:"/photography",element:<Photography/>},
-{path:"/quiz",element:<Quiz/>}
+{path:"/quiz",element:<Quiz/>},
+{path:"/organizers",element:<Oraganizer/>},
+{path:"/registration",element:<Registration/>}
 ])
 function App() {
   return (

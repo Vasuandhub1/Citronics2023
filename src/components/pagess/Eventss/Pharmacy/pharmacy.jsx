@@ -8,20 +8,25 @@ import { NavLink } from "react-router-dom";
 export default function Pharmacy() {
   var events = [
     {
-      title: "Cad championship",
+      title: "Musical Chair",
       dis: "Band war is a term that refers to the rivalry or conflict between two or more musical bands or groups, . ",
       price: 2000,
     },
     {
-        title:"Fun cart",
+        title:"Pass The Wire",
         dis:"Open mic is a term that refers to a live show at a venue where anyone can perform on stage.  ",
         price:200
     },
     {
-        title:"Slow cycle",
+        title:"Selfie Booth",
         dis:"Beat the Street is a community-wide programme that encourages people to walk, cycle, .",
         price:200
     },
+    {
+      title:"Lips Dont Lie",
+      dis:"catch the lier in thie game",
+      price:50
+    }
   ];
   return (
   <div id="comp">
@@ -51,7 +56,7 @@ export default function Pharmacy() {
                 <h3 class="card-title" className="innertext">{elements.title}</h3>
                 <p class="card-text" className="innertext">{elements.dis}</p>
                 <h5><p class="card-text" className="innertext">price:{elements.price}</p></h5>
-                <NavLink className="btn btn-outline-warning" to="/" id="button">Register...</NavLink>
+                <NavLink className="btn btn-outline-warning" to="/registration" id="button">Register...</NavLink>
                 </div>
                  
               </div>

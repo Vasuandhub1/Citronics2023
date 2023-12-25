@@ -18,7 +18,7 @@
     animation: titleEntrance 0.5s ease-out forwards;
 }
 #main{
-    margin-bottom:3rem;
+    margin-bottom:5rem;
 }
 #main-pc{
     margin-bottom: 10rem;
@@ -65,11 +65,12 @@
 }
 
 #sec-com{
-    margin-bottom: 1px;
+   
+    margin-bottom: 2rem;
 }
 #button{
     position: relative;
     bottom: 3rem;
-    left: 12rem;
+    left: 15rem;
     font-weight: 500;
 }

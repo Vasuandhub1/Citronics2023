@@ -17,7 +17,7 @@ return(
           <NavLink className="nav-link  fs-3 mx-5" aria-current="page" to="/">Home</NavLink>
         </li>
         <li className="nav-item">
-          <a className="nav-link fs-3 mx-5" href="#">Organizers</a>
+          <NavLink className="nav-link fs-3 mx-5" to="/organizers">Organizers</NavLink>
         </li>
         <li className="nav-item dropdown">
           <a className="nav-link dropdown-toggle fs-3 mx-5" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">

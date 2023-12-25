@@ -104,13 +104,13 @@ export default function Home() {
           </video>
           <div>
             {window.outerWidth <= 768 ? (
-              <NavLink  className="btn btn-outline-warning video-text" to="/aboutus">
+              <NavLink  className="btn btn-outline-warning video-text" to="/registration">
                 Register Here...
               </NavLink>
             ) : (
               
               <NavLink
-                className="btn btn-outline-warning video-text-pc" to="/aboutus"
+                className="btn btn-outline-warning video-text-pc" to="/registration"
               >
                 Register Here...
               </NavLink>

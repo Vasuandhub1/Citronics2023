@@ -8,20 +8,25 @@ import { NavLink } from "react-router-dom";
 export default function Onspot() {
   var events = [
     {
-      title: "Cad championship",
-      dis: "Band war is a term that refers to the rivalry or conflict between two or more musical bands or groups, . ",
+      title: "Rangoli",
+      dis: "Band war is a term that refers to the rivalry or conflict between two  . ",
       price: 2000,
     },
     {
-        title:"Fun cart",
+        title:"Ball Roll Chalange",
         dis:"Open mic is a term that refers to a live show at a venue where anyone can perform on stage.  ",
         price:200
     },
     {
-        title:"Slow cycle",
+        title:"Office tennis",
         dis:"Beat the Street is a community-wide programme that encourages people to walk, cycle, .",
         price:200
     },
+    {
+      title:"Plank Challange",
+      dis:"5 min plank challange.",
+      price:200
+    }
   ];
   return (
   <div id="comp">
@@ -51,7 +56,7 @@ export default function Onspot() {
                 <h3 class="card-title" className="innertext">{elements.title}</h3>
                 <p class="card-text" className="innertext">{elements.dis}</p>
                 <h5><p class="card-text" className="innertext">price:{elements.price}</p></h5>
-                <NavLink className="btn btn-outline-warning" to="/" id="button">Register...</NavLink>
+                <NavLink className="btn btn-outline-warning" to="/registration" id="button">Register...</NavLink>
                 </div>
                  
               </div>

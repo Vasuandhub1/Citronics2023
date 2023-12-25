@@ -1,8 +1,11 @@
 #video{
     position:absolute;
     width: 100%;
-    z-index: -1;
-   
+    z-index: -0;
+    
+}
+#register{
+    margin-bottom: 40%;
 }
 
 .video-text{
@@ -11,6 +14,7 @@
    left: 6rem;
    font-weight: 700;
    font-size:large;
+   
     
 }
 .video-text-pc{
@@ -19,16 +23,25 @@
     left: 45rem;
     font-weight: 700;
     font-size:xx-large;
+    
  }
 #cards {
 position: relative;
-top: 10rem;
+border-top: 2rem ;
+border-bottom: 5rem ;
 display: flex;
 flex-wrap: wrap;
 justify-content: space-evenly;
+background-color: rgba(0, 0, 0, 0);
 
 }
 #card-pc{
     position: relative;
-    top:40rem;
+    top:3rem;
+    border-color: black;
+}
+#backgr{
+    background:white;
+    background: -webkit-linear-gradient(to right,blue,white);
+    background: linear-gradient(to right,rgb(8, 134, 237),rgb(237, 232, 232));
 }

@@ -1,6 +1,7 @@
 import react from "react"
 import "./navigation.css"
 import logo from "./resources/con_logo2.png"
+import { NavLink } from "react-router-dom"
 function Navigation(){
 return(
    <div>
@@ -13,7 +14,7 @@ return(
     <div className="collapse navbar-collapse" id="navbarSupportedContent">
       <ul className="navbar-nav  me-auto mb-3 mb-lg-0">
         <li className="nav-item">
-          <a className="nav-link  fs-3 mx-5" aria-current="page" href="#">Home</a>
+          <NavLink className="nav-link  fs-3 mx-5" aria-current="page" to="/">Home</NavLink>
         </li>
         <li className="nav-item">
           <a className="nav-link fs-3 mx-5" href="#">Organizers</a>
@@ -23,39 +24,37 @@ return(
             Events
           </a>
           <ul className="dropdown-menu">
-            <li><a className="dropdown-item fs-3" href="#">Entertainment</a></li>
+            <li><NavLink className="dropdown-item fs-3" to="/entertainment">Entertainment</NavLink></li>
             <li><hr className="dropdown-divider"/></li>
-            <li><a className="dropdown-item fs-3" href="#">Mechanical</a></li>
+            <li><NavLink className="dropdown-item fs-3" to="/mechanical">Mechanical</NavLink></li>
             <li><hr className="dropdown-divider"/></li>
-            <li><a className="dropdown-item fs-3" href="#">Managemengt</a></li>
+            <li><NavLink className="dropdown-item fs-3" to="/management">Managemengt</NavLink></li>
             <li><hr className="dropdown-divider"/></li>
-            <li><a className="dropdown-item fs-3" href="#">Civil</a></li>
+            <li><NavLink className="dropdown-item fs-3" to="/civil">Civil</NavLink></li>
             <li><hr className="dropdown-divider"/></li>
-            <li><a className="dropdown-item fs-3" href="#">Robotics</a></li>
+            <li><NavLink className="dropdown-item fs-3" to="/robotics">Robotics</NavLink></li>
             <li><hr className="dropdown-divider"/></li>
-            <li><a className="dropdown-item fs-3" href="#">Enterprenurship</a></li>
+            <li><NavLink className="dropdown-item fs-3" to="/enterprenureship">Enterprenurship</NavLink></li>
             <li><hr className="dropdown-divider"/></li>
-            <li><a className="dropdown-item fs-3" href="#">Pharmacy</a></li>
+            <li><NavLink className="dropdown-item fs-3"to="/pharmacy"  >Pharmacy</NavLink></li>
             <li><hr className="dropdown-divider"/></li>
-            <li><a className="dropdown-item fs-3" href="#">Software</a></li>
+            <li><NavLink className="dropdown-item fs-3" to="/software">Software</NavLink></li>
             <li><hr className="dropdown-divider"/></li>
-            <li><a className="dropdown-item fs-3" href="#">On Spot Event</a></li>
+            <li><NavLink className="dropdown-item fs-3" to="/onspot">On Spot Event</NavLink></li>
             <li><hr className="dropdown-divider"/></li>
-            <li><a className="dropdown-item fs-3" href="#">Sports</a></li>
+            <li><NavLink className="dropdown-item fs-3" to="/sports">Sports</NavLink></li>
             <li><hr className="dropdown-divider"/></li>
-            <li><a className="dropdown-item fs-3" href="#">Advanterous Events</a></li>
+            <li><NavLink className="dropdown-item fs-3" to="/advsports">Advanterous Events</NavLink></li>
             <li><hr className="dropdown-divider"/></li>
-            <li><a className="dropdown-item fs-3" href="#">Managemengt</a></li>
+            <li><NavLink className="dropdown-item fs-3" to="/photography">Photography</NavLink></li>
             <li><hr className="dropdown-divider"/></li>
-            <li><a className="dropdown-item fs-3" href="#">Photography</a></li>
-            <li><hr className="dropdown-divider"/></li>
-            <li><a className="dropdown-item fs-3" href="#">National Quiz</a></li>
+            <li><NavLink className="dropdown-item fs-3" to="/quiz">National Quiz</NavLink></li>
             <li><hr className="dropdown-divider"/></li>
 
           </ul>
         </li>
         <li className="nav-item">
-          <a className="nav-link  fs-3" aria-disabled="true">About Us</a>
+          <NavLink className="nav-link  fs-3" aria-disabled="true" to="/aboutus ">About Us</NavLink>
         </li>
       </ul>
      

@@ -1,0 +1,75 @@
+#comp{
+    background:white;
+    background: -webkit-linear-gradient(to right,blue,white);
+    background: linear-gradient(to right,rgb(8, 134, 237),rgb(237, 232, 232));
+}
+.heading{
+    text-align: center;
+    text-decoration: underline;
+    font-size:800;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+    color: #000000;
+    text-decoration: none;
+    padding-top: 2px;
+    font-size:1rem;
+    opacity: 0.0;
+    transform: scale(0.8);
+    animation: titleEntrance 0.5s ease-out forwards;
+}
+#main{
+    margin-bottom:3rem;
+}
+#main-pc{
+    margin-bottom: 10rem;
+}
+.heading-pc{
+    text-align: center;
+    text-decoration: underline;
+    font-size:800;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+    color: #000000;
+    text-decoration: none;
+    font-size:3rem;
+    letter-spacing: 0.8px;
+    padding-top: 5rem;
+    opacity: 0.0;
+    transform: scale(0.8);
+    animation: titleEntrance 0.5s ease-out forwards;
+}
+#img{
+    position: absolute;
+    z-index: -0;
+    width: 100%;
+    opacity: 0.5;
+}
+#event{
+    list-style: none;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+#event li{
+    box-shadow:10px 10px 5px rgba(0, 0, 0, 0.508);
+    
+}
+.innertext{
+    color: rgb(229, 226, 227);
+    
+}
+#inner-car{
+    background-color: #0000009c;
+   
+}
+
+#sec-com{
+    margin-bottom: 1px;
+}
+#button{
+    position: relative;
+    bottom: 3rem;
+    left: 12rem;
+    font-weight: 500;
+}

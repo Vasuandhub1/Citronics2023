@@ -1,5 +1,6 @@
 import React from "react";
 import "./home.css";
+import Navigation from "../../Navigation bar/navigation";
 import background from "./resources/Reelvideo-42046.mp4";
 import entertainment from "./resources/o.jpg";
 import mechanical from "./resources/154900.jpg";
@@ -14,32 +15,39 @@ import sports from "./resources/R.jpg";
 import adventure from "./resources/the-start-of-an-adventure-4k-10.jpg";
 import photography from "./resources/camera.jpg";
 import quiz from "./resources/quiz-1-.jpg"
+import { NavLink } from "react-router-dom";
+import Footers from "../../Footer Bar/Footers";
 export default function Home() {
   var events = [
     {
       title: "Entertainment",
       events: ["band war", "Open mic", "Beat The Street", "Dance"],
-      photo:entertainment
+      photo:entertainment,
+      link:"/entertainment"
     },
     {
       title: "Mechanical",
       events: ["Cad Champianship", "Fun kart", "Slow Cycle"],
-      photo:mechanical
+      photo:mechanical,
+      link:"/mechanical"
     },
     {
       title: "Management",
       events: ["Snake & Ladder", "Master Chef", "Ramp walk", "Treasure Hunt"],
-      photo:management
+      photo:management,
+      link:"/management"
     },
     {
       title: "Civil",
       events: ["Tic Tac Toe", "Arc Bridge", "Draw Up", "Bridge Maina"],
-      photo:civil
+      photo:civil,
+      link:"/civil"
     },
     {
       title: "Robotics",
       events: ["Robo Race", "Robo war", "Line Folloer", "Maze Solver"],
-      photo:robotics
+      photo:robotics,
+      link:"/robotics"
     },
     {
       title: "Enterprenurship",
@@ -49,7 +57,8 @@ export default function Home() {
         "Money Heist",
         "Red Light Green Light",
       ],
-      photo:enterprenureship
+      photo:enterprenureship,
+      link:"/enterprenureship"
     },
     {
       title: "Pharmacy",
@@ -59,12 +68,14 @@ export default function Home() {
         "Selfie Booth",
         "Lips Dont Lie",
       ],
-      photo:pharmacy
+      photo:pharmacy,
+      link:"/pharmacy"
     },
     {
       title: "Software",
       events: ["Code Hunter", "Beat The Bug", "Best Googler", "Simon Game"],
-      photo:software
+      photo:software,
+      link:"/software"
     },
     {
       title: "On Spot Event",
@@ -74,41 +85,44 @@ export default function Home() {
         "Office tennis",
         "Plank Challange",
       ],
-      photo:onspot
+      photo:onspot,
+      link:"/onspot"
     },
-    { title: "Sports", events: ["Tug Of War", "Carrom", "Badminton", "Chess"],photo:sports },
-    { title: "Adventerus Events", events: ["Rodies"],photo:adventure },
-    { title: "Photography", events: ["Reel", "DSLR", "Mobile"],photo:photography },
-    { title: "National Quiz", events: ["National Quiz"],photo:quiz},
+    { title: "Sports", events: ["Tug Of War", "Carrom", "Badminton", "Chess"],photo:sports,link:"/Sports" },
+    { title: "Adventerus Events", events: ["Rodies"],photo:adventure,link:"/advsports"},
+    { title: "Photography", events: ["Reel", "DSLR", "Mobile"],photo:photography,link:"/photography" },
+    { title: "National Quiz", events: ["National Quiz"],photo:quiz, link:"/quiz"},
   ];
   return (
     <>
+    <div id="backgr">
+    <Navigation></Navigation>
       <div id="main">
-        <div>
+        <div id="register">
           <video autoPlay loop muted id="video">
             <source src={background} type="video/mp4" />
           </video>
           <div>
-            {window.outerWidth <= 786 ? (
-              <button type="button" class="btn btn-outline-warning video-text">
+            {window.outerWidth <= 768 ? (
+              <NavLink  className="btn btn-outline-warning video-text" to="/aboutus">
                 Register Here...
-              </button>
+              </NavLink>
             ) : (
-              <button
-                type="button"
-                class="btn btn-outline-warning video-text-pc"
+              
+              <NavLink
+                className="btn btn-outline-warning video-text-pc" to="/aboutus"
               >
                 Register Here...
-              </button>
+              </NavLink>
             )}
           </div>
         </div>
         <div >
           <ul style={{ listStyle: "none" }} id="cards">
           {events.map((elements, index) => {
-            return ( <div>
-                {window.outerWidth <= 786 ? <li key={index} >
-                <div class="card border-info mb-3" style={{ width: " 18rem" }}>
+            return ( <div id="cad">
+                {window.outerWidth <= 768 ? <li key={index} >
+                <div class="card border-info mb-3" style={{ width: " 18rem" }} >
                   <img src={elements.photo} class="card-img-top" alt="image not found" style={{height:"10rem"}} />
                   <div class="card-body">
                     <h5 class="card-title">{elements.title}</h5>
@@ -126,8 +140,8 @@ export default function Home() {
                     
                   </ul>
                   <div class="card-body ">
-                  <button type="button" class="btn btn-info m-3">Rigister</button>
-                  <button type="button" class="btn btn-warning m-3">Contact Us</button>
+                  <NavLink className="btn btn-info m-3" to={elements.link}>Register</NavLink>
+                  <NavLink  className="btn btn-warning m-3" to="/aboutus">Contact Us</NavLink>
                   </div>
                 </div>
               </li> : 
@@ -150,8 +164,8 @@ export default function Home() {
                   
                 </ul>
                 <div class="card-body ">
-                <button type="button" class="btn btn-info m-3">Rigister</button>
-                <button type="button" class="btn btn-warning m-3">Contact Us</button>
+                <NavLink className="btn btn-info m-3" to={elements.link}>Register</NavLink>
+                  <NavLink  className="btn btn-warning m-3" to="/aboutus">Contact Us</NavLink>
                 </div>
               </div>
             </li>}
@@ -160,6 +174,8 @@ export default function Home() {
           })}
           </ul>
         </div>
+      </div>
+      <Footers></Footers>
       </div>
     </>
   );

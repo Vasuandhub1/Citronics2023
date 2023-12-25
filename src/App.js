@@ -1,7 +1,6 @@
-import logo from './logo.svg';
+
 import './App.css';
 import Home from './components/pagess/home/home';
-import Navigation from './components/Navigation bar/navigation';
 import Aboutus from "./components/About/Aboutus.jsx";
 import Entertainment from './components/pagess/Eventss/Entertainment/entertainment.jsx';
 import Mechanical from './components/pagess/Eventss/Mechanical/mechanical.jsx';
@@ -19,7 +18,7 @@ import Quiz from './components/pagess/Eventss/Quiz/quiz.jsx';
 import Oraganizer from './components/pagess/Organizer/oraganizer.jsx';
 import Registration from './components/pagess/registration/registration.jsx';
 import {RouterProvider, createBrowserRouter } from "react-router-dom";
-import { useEffect, useState } from 'react';
+
 
 const router = createBrowserRouter([{path:"/",element: <Home/>},
 {path:"/aboutus",element:<Aboutus/>},

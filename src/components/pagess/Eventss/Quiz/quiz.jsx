@@ -23,12 +23,12 @@ export default function Quiz() {
         <img src={img} alt="error" id="img"/>
         <h1 className="heading">Chameli Devi Group Of Institutions</h1>
         <h2 className="heading">CITRONICS - 2K24</h2>
-        <h2 className="heading">Entertainments Events</h2>
+        <h2 className="heading">National Quiz</h2>
         </div> : <div id ="main-pc" >
         <img src={img} alt="error" id="img"/>
         <h1 className="heading-pc">Chameli Devi Group Of Institutions</h1>
         <h2 className="heading-pc">CITRONICS - 2K24</h2>
-        <h2 className="heading-pc">Entertainments Events</h2>
+        <h2 className="heading-pc">National Quiz</h2>
         </div>}
         </div>
         <div id="sec-com">

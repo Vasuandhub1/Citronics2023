@@ -3,10 +3,13 @@ import "./Oraganizer.css";
 import chairman from "./img/chairman.jpg";
 import director from "./img/Director.jpg";
 import principal from "./img/principal.jpg";
+import Navigation from "../../Navigation bar/navigation";
+import Footers from "../../Footer Bar/Footers";
 
 function Oraganizer() {
   return (
     <>
+    <Navigation></Navigation>
       <div id="container">
         <section class="dark">
           <div class="container py-4">
@@ -111,6 +114,7 @@ function Oraganizer() {
           </div>
         </section>
       </div>
+      <Footers></Footers>
     </>
   );
 }

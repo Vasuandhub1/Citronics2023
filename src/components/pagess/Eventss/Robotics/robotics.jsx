@@ -9,17 +9,17 @@ export default function Robotics() {
   var events = [
     {
       title: "Robo Race",
-      dis: "Band war is a term that refers to the rivalry or conflict between two or more musical bands or groups, . ",
+      dis: "Band war is a term that refers to the rivalry or conflict between two or more musical bands or groups.",
       price: 2000,
     },
     {
         title:"Robo War",
-        dis:"Open mic is a term that refers to a live show at a venue where anyone can perform on stage.  ",
+        dis:"Open mic is a term that refers to a live show at a venue where anyone can perform on stage.",
         price:2000
     },
     {
         title:"Line Folloer",
-        dis:"Beat the Street is a community-wide programme that encourages people to walk, cycle, .",
+        dis:"Beat the Street is a community-wide programme that encourages people to walk, cycle.",
         price:2000
     },
     {
@@ -37,12 +37,12 @@ export default function Robotics() {
         <img src={img} alt="error" id="img"/>
         <h1 className="heading">Chameli Devi Group Of Institutions</h1>
         <h2 className="heading">CITRONICS - 2K24</h2>
-        <h2 className="heading">Entertainments Events</h2>
+        <h2 className="heading">Robotics Events</h2>
         </div> : <div id ="main-pc" >
         <img src={img} alt="error" id="img"/>
         <h1 className="heading-pc">Chameli Devi Group Of Institutions</h1>
         <h2 className="heading-pc">CITRONICS - 2K24</h2>
-        <h2 className="heading-pc">Entertainments Events</h2>
+        <h2 className="heading-pc">Robotics Events</h2>
         </div>}
         </div>
         <div id="sec-com">

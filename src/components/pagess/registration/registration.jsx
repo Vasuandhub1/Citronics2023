@@ -1,10 +1,13 @@
 import React from 'react';
 import './Registration.css';
+import Navigation from '../../Navigation bar/navigation';
+import Footers from '../../Footer Bar/Footers';
 
 function Registration() {
   return (
 
     <>
+    <Navigation></Navigation>
     <div id='container'>
    
     <div className="form">
@@ -89,7 +92,7 @@ function Registration() {
       </div>
     </div>
     </div>
-    
+    <Footers></Footers>
     </>
   );
 }

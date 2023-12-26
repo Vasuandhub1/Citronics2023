@@ -6,7 +6,7 @@ import principal from "./img/principal.jpg";
 import Navigation from "../../Navigation bar/navigation";
 import Footers from "../../Footer Bar/Footers";
 
-function Oraganizer() {
+export default function Oraganize() {
   return (
     <>
     <Navigation></Navigation>
@@ -119,4 +119,4 @@ function Oraganizer() {
   );
 }
 
-export default Oraganizer;
+

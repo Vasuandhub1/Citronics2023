@@ -1,9 +1,19 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import './Registration.css';
 import Navigation from '../../Navigation bar/navigation';
 import Footers from '../../Footer Bar/Footers';
+import amount_context from '../../context/context';
 
 function Registration() {
+  // calling the context elements
+  const{data}=useContext(amount_context)
+  const{amount}=useContext(amount_context)
+  var titles=[]
+  data.map((elements,index)=>{
+    if(elements.values!=0){
+      titles.push(elements.title)
+    }
+  })
   return (
 
     <>
@@ -13,7 +23,7 @@ function Registration() {
     <div className="form">
 
       <div className="form-body">
-       <h1>REGISTRATION  form</h1>
+       <h1>REGISTER</h1>
         <div className="name">
           <label className="form__label" htmlFor="fullName">
             Full Name
@@ -57,9 +67,9 @@ function Registration() {
         </div>
         <div className="event-domain">
   <label className="form__label" htmlFor="eventdomain">
-    Event Domain
+    Selected Events
   </label>
-  <select className="form__input" id="eventdomain" defaultValue="">
+  {/* <select className="form__input" id="eventdomain" defaultValue="">
     <option value="" disabled>Select Event</option>
     <option value="entertainment">Entertainment</option>
     <option value="mechanical">Mechanical</option>
@@ -75,19 +85,20 @@ function Registration() {
     <option value="management2">Managemengt</option>
     <option value="photography">Photography</option>
     <option value="nationalQuiz">National Quiz</option>
-  </select>
+  </select> */}
+  <input type="text" id="semester" className="form__input" placeholder="Semester" value={[...titles]} />
 </div>
 <div className="eventname">
           <label className="form__label" htmlFor="eventname">
-            Event Name
+            Total  Payable Amount
           </label>
-          <input type="text" id="eventname" className="form__input" placeholder="Event Name" />
+          <input type="text" id="eventname" className="form__input" placeholder="Event Name" value={`Rs. ${amount}`} />
         </div>
         
       </div>
       <div className="footer">
         <button type="submit" className="btns">
-          Register
+          {amount===0? 'Select Any Event' : 'Continue To Pay' }
         </button>
       </div>
     </div>

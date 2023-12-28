@@ -3,6 +3,7 @@ import './Registration.css';
 import Navigation from '../../Navigation bar/navigation';
 import Footers from '../../Footer Bar/Footers';
 import amount_context from '../../context/context';
+import { NavLink } from 'react-router-dom';
 
 function Registration() {
   // calling the context elements
@@ -92,14 +93,14 @@ function Registration() {
           <label className="form__label" htmlFor="eventname">
             Total  Payable Amount
           </label>
-          <input type="text" id="eventname" className="form__input" placeholder="Event Name" value={`Rs. ${amount}`} />
+          <input type="text" id="eventname" className="form__input" placeholder="Event Name" value={`₹ ${amount}`} />
         </div>
         
       </div>
       <div className="footer">
-        <button type="submit" className="btns">
-          {amount===0? 'Select Any Event' : 'Continue To Pay' }
-        </button>
+        {amount===0? <NavLink className="btns" to="/" style={{textDecoration:"none", paddingLeft:"50px",paddingRight:"50px"}}>Select Any Event</NavLink>:<button type="submit" className="btns">
+           'Continue To Pay'
+        </button>}
       </div>
     </div>
     </div>

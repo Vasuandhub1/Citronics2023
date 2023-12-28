@@ -19,6 +19,7 @@ import Oraganize from './components/pagess/Organ/oraganize.jsx';
 import Registration from './components/pagess/registration/registration.jsx';
 import amount_context from './components/context/context.jsx';
 import {RouterProvider, createBrowserRouter } from "react-router-dom";
+import Cart from './components/pagess/Cart/Cart.jsx';
 import { useEffect, useState } from 'react';
 
 
@@ -38,7 +39,8 @@ const router = createBrowserRouter([{path:"/",element: <Home/>},
 {path:"/photography",element:<Photography/>},
 {path:"/quiz",element:<Quiz/>},
 {path:"/organize",element:<Oraganize/>},
-{path:"/registration",element:<Registration/>}
+{path:"/registration",element:<Registration/>},
+{path:"/cart",element:<Cart/>}
 ])
 function App() {
   const[amount,Setamount]=useState(0)

@@ -11,25 +11,25 @@ export default function Oraganize() {
     <>
     <Navigation></Navigation>
       <div id="container">
-        <section class="dark">
-          <div class="container py-4">
-            <h1 class="h1 text-center" id="pageHeaderTitle">
+        <section className="dark">
+          <div className="container py-4">
+            <h1 className="h1 text-center" id="pageHeaderTitle">
               ORAGANIZER
             </h1>
 
-            <article class="postcard dark blue">
-              <a class="postcard__img_link" href="#">
-                <img class="postcard__img" src={chairman} alt="Image Title" />
+            <article className="postcard dark blue">
+              <a className="postcard__img_link" href="#">
+                <img className="postcard__img" src={chairman} alt="Image Title" />
               </a>
-              <div class="postcard__text">
-                <h1 class="postcard__title blue">
+              <div className="postcard__text">
+                <h1 className="postcard__title blue">
                   <a href="#"> Shri. Vinod Kumar Agarwal</a>
                 </h1>
-				<div class="postcard__subtitle small">
+				<div className="postcard__subtitle small">
 					<h3>Chairmen</h3>
 				</div>
-                <div class="postcard__bar"></div>
-                <div class="postcard__preview-txt">
+                <div className="postcard__bar"></div>
+                <div className="postcard__preview-txt">
                   The Agarwal Group in tune with its policy of excellence
                   blended with ethics is committed to put CDGI on the highest
                   pedestal of academic and technical values. CDGI is focused on
@@ -45,20 +45,20 @@ export default function Oraganize() {
                 </div>
               </div>
             </article>
-            <article class="postcard dark red">
-              <a class="postcard__img_link" href="#">
-                <img class="postcard__img" src={director} alt="Image Title" />
+            <article className="postcard dark red">
+              <a className="postcard__img_link" href="#">
+                <img className="postcard__img" src={director} alt="Image Title" />
               </a>
-              <div class="postcard__text">
-                <h1 class="postcard__title red">
+              <div className="postcard__text">
+                <h1 className="postcard__title red">
                   <a href="#">Dr Joy Banerjee </a>
                 </h1>
               </div>
-			  <div class="postcard__subtitle small">
+			  <div className="postcard__subtitle small">
 					<h3>Director</h3>
 				</div>
-              <div class="postcard__bar"></div>
-              <div class="postcard__preview-txt">
+              <div className="postcard__bar"></div>
+              <div className="postcard__preview-txt">
                 Experienced IIT Kharagpur Engineering Alumnus and Professor with
                 a rich background in academia, corporate, and administrative
                 roles. Arthur D. Little, Boston alumnus with teaching
@@ -75,20 +75,20 @@ export default function Oraganize() {
                 Svenska Flakt, Greaves Foseco, and SAIL.
               </div>
             </article>
-            <article class="postcard dark green">
-              <a class="postcard__img_link" href="#">
-                <img class="postcard__img" src={principal} alt="Image Title" />
+            <article className="postcard dark green">
+              <a className="postcard__img_link" href="#">
+                <img className="postcard__img" src={principal} alt="Image Title" />
               </a>
-              <div class="postcard__text">
-                <h1 class="postcard__title green">
+              <div className="postcard__text">
+                <h1 className="postcard__title green">
                   <a href="#"> Dr Manish Kumar Srivastava</a>
                 </h1>
-				<div class="postcard__subtitle small">
+				<div className="postcard__subtitle small">
 					<h3>PRINCIPAL</h3>
 				</div>
                
-                <div class="postcard__bar"></div>
-                <div class="postcard__preview-txt">
+                <div className="postcard__bar"></div>
+                <div className="postcard__preview-txt">
 				Dr. Manish, with 28 years of diverse experience in academia,
                 administration, and software industries, is a recognized expert
                 in IPR, Data Science, IoT, and AI. He holds a Ph.D. in
@@ -104,9 +104,9 @@ export default function Oraganize() {
                 for AICTE and RGPV funded projects. Currently, he is preparing
                 to release a book on "Innovative Engineering with AI
                 Application" with John Wiley & Sons.</div>
-                <ul class="postcard__tagbox">
-                  <li class="tag__item">
-                    <i class="fas fa-tag mr-2"></i>Podcast
+                <ul className="postcard__tagbox">
+                  <li className="tag__item">
+                    <i className="fas fa-tag mr-2"></i>Podcast
                   </li>
                 </ul>
               </div>
@@ -114,7 +114,8 @@ export default function Oraganize() {
           </div>
         </section>
       </div>
-      <Footers></Footers>
+     <Footers></Footers>
+      
     </>
   );
 }

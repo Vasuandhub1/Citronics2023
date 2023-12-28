@@ -17,7 +17,20 @@ import photography from "./resources/camera.jpg";
 import quiz from "./resources/quiz-1-.jpg"
 import { NavLink } from "react-router-dom";
 import Footers from "../../Footer Bar/Footers";
+
+
+
+// calling the function
+
+
 export default function Home() {
+ 
+  
+   
+  
+
+ 
+
   var events = [
     {
       title: "Entertainment",
@@ -122,48 +135,48 @@ export default function Home() {
           {events.map((elements, index) => {
             return ( <div id="cad">
                 {window.outerWidth <= 768 ? <li key={index} >
-                <div class="card border-info mb-3" style={{ width: " 18rem" }} >
-                  <img src={elements.photo} class="card-img-top" alt="image not found" style={{height:"10rem"}} />
-                  <div class="card-body">
-                    <h5 class="card-title">{elements.title}</h5>
-                    <p class="card-text">
+                <div className="card border-info mb-3" style={{ width: " 18rem" }} >
+                  <img src={elements.photo} className="card-img-top" alt="image not found" style={{height:"10rem"}} />
+                  <div className="card-body">
+                    <h5 className="card-title">{elements.title}</h5>
+                    <p className="card-text">
                       Some quick example text to build on the card title and
                       make up the bulk of the card's content.
                     </p>
                   </div>
-                  <ul class="list-group list-group-flush">
+                  <ul className="list-group list-group-flush">
                     {elements.events.map((list,items)=>{
                         return(
-                            <li class="list-group-item">{list}</li>
+                            <li className="list-group-item">{list}</li>
                         )
                     })}
                     
                   </ul>
-                  <div class="card-body ">
+                  <div className="card-body ">
                   <NavLink className="btn btn-info m-3" to={elements.link}>Register</NavLink>
                   <NavLink  className="btn btn-warning m-3" to="/aboutus">Contact Us</NavLink>
                   </div>
                 </div>
               </li> : 
                <li key={index} id="card-pc">
-              <div class="card border-info mb-3" style={{ width: " 18rem" }}>
-                <img src={elements.photo} class="card-img-top" alt="image not found" style={{height:"10rem"}} />
-                <div class="card-body">
-                  <h5 class="card-title">{elements.title}</h5>
-                  <p class="card-text">
+              <div className="card border-info mb-3" style={{ width: " 18rem" }}>
+                <img src={elements.photo} className="card-img-top" alt="image not found" style={{height:"10rem"}} />
+                <div className="card-body">
+                  <h5 className="card-title">{elements.title}</h5>
+                  <p className="card-text">
                     Some quick example text to build on the card title and
                     make up the bulk of the card's content.
                   </p>
                 </div>
-                <ul class="list-group list-group-flush">
+                <ul className="list-group list-group-flush">
                   {elements.events.map((list,items)=>{
                       return(
-                          <li class="list-group-item">{list}</li>
+                          <li className="list-group-item">{list}</li>
                       )
                   })}
                   
                 </ul>
-                <div class="card-body ">
+                <div className="card-body ">
                 <NavLink className="btn btn-info m-3" to={elements.link}>Register</NavLink>
                   <NavLink  className="btn btn-warning m-3" to="/aboutus">Contact Us</NavLink>
                 </div>

@@ -20,6 +20,7 @@ import Registration from './components/pagess/registration/registration.jsx';
 import amount_context from './components/context/context.jsx';
 import {RouterProvider, createBrowserRouter } from "react-router-dom";
 import Cart from './components/pagess/Cart/Cart.jsx';
+import Viewcart from './components/viewcart/viewcart.jsx';
 import { useEffect, useState } from 'react';
 
 
@@ -351,7 +352,7 @@ function App() {
     {
       title:"Chess",
       dis:"best stretagic game to play for brain exercise",
-      print:50,
+      price:50,
       values:0,
       branch:"sports"
     }

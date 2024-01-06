@@ -1,76 +1,66 @@
-#comp{
-    background:white;
-    background: -webkit-linear-gradient(to right,blue,white);
-    background: linear-gradient(to right,rgb(8, 134, 237),rgb(237, 232, 232));
-}
-.heading{
-    text-align: center;
-    text-decoration: underline;
-    font-size:800;
-    font-family: 'Times New Roman', Times, serif;
-    font-weight: bold;
-    color: #000000;
-    text-decoration: none;
-    padding-top: 2px;
-    font-size:1rem;
-    opacity: 0.0;
-    transform: scale(0.8);
-    animation: titleEntrance 0.5s ease-out forwards;
-}
-#main{
-    margin-bottom:5rem;
-}
-#main-pc{
-    margin-bottom: 10rem;
-}
-.heading-pc{
-    text-align: center;
-    text-decoration: underline;
-    font-size:800;
-    font-family: 'Times New Roman', Times, serif;
-    font-weight: bold;
-    color: #000000;
-    text-decoration: none;
-    font-size:3rem;
-    letter-spacing: 0.8px;
-    padding-top: 5rem;
-    opacity: 0.0;
-    transform: scale(0.8);
-    animation: titleEntrance 0.5s ease-out forwards;
-}
-#img{
-    position: absolute;
-    z-index: -0;
-    width: 100%;
-    opacity: 0.5;
-}
-#event{
-    list-style: none;
-    display: flex;
-    justify-content: space-evenly;
-    flex-wrap: wrap;
-    gap: 2rem;
-}
-#event li{
-    box-shadow:10px 10px 5px rgba(0, 0, 0, 0.508);
+*{margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;}
+    #middel{
+        overflow: auto;
+        background-image:url("./cdgiimg.jpg") ;
+        background-repeat: no-repeat;
+        background-size: 100%;
+       
+    }
     
-}
-.innertext{
-    color: rgb(229, 226, 227);
+    .inte-head{
+        text-align: center;
+        font-size: 5rem;
+        font-family: 'Times New Roman', Times, serif;
+        margin:2rem;
+    }
+    #content{
+        background-image: linear-gradient(to bottom,white,rgb(179, 230, 244),white
+        );
+        padding: 5%;
+    }
+    #footer{
     
-}
-#inner-car{
-    background-color: #0000009c;
-   
-}
-
-#sec-com{
-   
-    margin-bottom: 2rem;
-}
-#button{
-    position: relative;
-    bottom: 3rem;
-    left: 15rem;
-    font-weight: 500;
-}
+        width: 100%;
+        height: fit-content;
+    }
+    #inner-car{
+        max-width: 15rem;
+        max-height: 5rem;
+        overflow:auto;
+        background-color: rgba(0, 0, 0, 0.601);
+    }
+    #buttons{
+        margin-top: 20px;
+        display: flex;
+        justify-content: space-between;
+        background-color: rgba(0, 0, 0, 0.601);
+        padding: 1%;
+    }
+    #main-card{
+        height: max-content;
+        width: max-content;
+    }
+    #event{
+        display: flex;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+    #viewcart{
+        position:fixed;
+        bottom: 1px;
+    }
+    #button{
+        max-width: 150px;
+        max-height: 40px;
+    }
+    @media screen and (max-width:786px) {
+        .inte-head{
+            text-align: center;
+            font-family: 'Times New Roman', Times, serif;
+            font-size: medium;
+           margin: 9px;
+        }
+    }

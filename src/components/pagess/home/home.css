@@ -45,3 +45,7 @@ background-color: rgba(0, 0, 0, 0);
     background: -webkit-linear-gradient(to right,blue,white);
     background: linear-gradient(to right,rgb(8, 134, 237),rgb(237, 232, 232));
 }
+#viewcart{
+    position:fixed;
+    bottom: 1px;
+}

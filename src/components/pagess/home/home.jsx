@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useContext } from "react";
 import "./home.css";
 import Navigation from "../../Navigation bar/navigation";
 import background from "./resources/Reelvideo-42046.mp4";
@@ -17,7 +17,8 @@ import photography from "./resources/camera.jpg";
 import quiz from "./resources/quiz-1-.jpg"
 import { NavLink } from "react-router-dom";
 import Footers from "../../Footer Bar/Footers";
-
+import Viewcart from "../../viewcart/viewcart";
+import amount_context from "../../context/context";
 
 
 // calling the function
@@ -26,7 +27,7 @@ import Footers from "../../Footer Bar/Footers";
 export default function Home() {
  
   
-   
+   const{amount}=useContext(amount_context);
   
 
  
@@ -187,6 +188,7 @@ export default function Home() {
           })}
           </ul>
         </div>
+        {amount!=0?<div id="viewcart"><Viewcart/></div>:<p></p>}
       </div>
       <Footers></Footers>
       </div>

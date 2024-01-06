@@ -20,9 +20,9 @@ return(
           <NavLink className="nav-link fs-3 mx-5" to="/organize">Organizers</NavLink>
         </li>
         <li className="nav-item">
-          <NavLink className="nav-link  fs-3" aria-disabled="true" to="/cart">Cart</NavLink>
+          <NavLink className="nav-link fs-3 mx-5" aria-disabled="true" to="/cart">Cart</NavLink>
         </li>
-        <li className="nav-item dropdown">
+        <li className="nav-item ">
           <a className="nav-link dropdown-toggle fs-3 mx-5" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
             Events
           </a>
@@ -57,7 +57,7 @@ return(
           </ul>
         </li>
         <li className="nav-item">
-          <NavLink className="nav-link  fs-3" aria-disabled="true" to="/aboutus ">About Us</NavLink>
+          <NavLink className="nav-link  fs-3  mx-5" aria-disabled="true" to="/aboutus ">About Us</NavLink>
         </li>
         
       </ul>

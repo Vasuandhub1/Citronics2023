@@ -6,6 +6,7 @@ import "./software.css";
 import bg from "./4391662.webp"
 import { NavLink } from "react-router-dom";
 import amount_context from "../../../context/context";
+import Viewcart from "../../../viewcart/viewcart";
 export default function Software() {
   // calling the context elements
   const {amount}=useContext(amount_context)
@@ -42,46 +43,39 @@ export default function Software() {
     Setamount((amount)=>amount+temp[index].price)
   }
   return (
-  <div id="comp">
     <div>
-    <Navigation/>
-    <div id="main" >
-    {window.outerWidth<=768?<div id="main">
-        <img src={img} alt="error" id="img"/>
-        <h1 className="heading">Chameli Devi Group Of Institutions</h1>
-        <h2 className="heading">CITRONICS - 2K24</h2>
-        <h2 className="heading">Software Events</h2>
-        </div> : <div id ="main-pc" >
-        <img src={img} alt="error" id="img"/>
-        <h1 className="heading-pc">Chameli Devi Group Of Institutions</h1>
-        <h2 className="heading-pc">CITRONICS - 2K24</h2>
-        <h2 className="heading-pc">Software Events</h2>
-        </div>}
+    <div id="header"><Navigation></Navigation></div>
+    <div id="middel">
+        <div className="inte-head">
+          <h1 className="inte-head">Chameli Devi Group Of Institutions</h1>
+        <h2 className="inte-head">CITRONICS - 2K24</h2>
+        <h3 className="inte-head">Software</h3></div>
         </div>
-        <div id="sec-com">
-         <ul id="event">
-         {data&& data.map &&data.map((elements,index)=>{
-           if(elements.branch==="software"){return(
-            <li key={index}><div className="card text-bg-dark" style={{ width: "21rem"}}>
-            <img src={bg} className="card-img" alt="..."/>
-            <div className="card-img-overlay">
-              <div id="inner-car">
-              <h3 className="card-title innertext">{elements.title}</h3>
-              <p className="card-text innertext">{elements.dis}</p>
-              <h5><p className="card-text innertext">Entry Fee:{elements.price}</p></h5>
-              <button type="button" className="btn btn-success" onClick={()=>handleadd(index)} id="button">{elements.values===0?<p>Add...</p> : <p>{elements.values}</p>} </button>
-              
-              </div>
-               
-            </div>
-          </div> </li>
-          )}
-            
-          })}
-         </ul>
+        <div id="content">
+          <ul id="event">
+            {data.map((elements,index)=>{
+              if(elements.branch==="software"){
+                return(<li key={index} id="list-item"><div className="card text-bg-dark"  id ="main-card"style={{ width: "18rem"}}>
+                <img src={bg} className="card-img" alt="..." />
+                <div className="card-img-overlay">
+                  <div id="inner-car">
+                  <h3 className="card-title innertext">{elements.title}</h3>
+                  <p className="card-text innertext">{elements.dis}</p>
+                  </div>
+                  <div id="buttons">
+                  <h5><p className="card-text innertext">Entry Fee:{elements.price}</p></h5>
+                  <button type="button" className="btn btn-success" onClick={()=>handleadd(index)} id="button">{elements.values===0?<p>Add...</p> : <p>{elements.values}</p>} </button>
+                  </div>
+                </div>
+              </div> </li>)
+              }
+            })}
+          </ul>
+          {amount!=0?<div id="viewcart"><Viewcart/></div>:<p></p>}
         </div>
-    <Footers/> 
-     </div>
-     </div>
+    <div id="footer">
+      <Footers></Footers>
+    </div>
+  </div>
   );
 }

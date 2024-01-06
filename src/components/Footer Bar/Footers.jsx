@@ -3,6 +3,7 @@ import "./Footer.css";
 
 function Footers() {
   return (
+    <div>
     <div className="footer-section">
       <div className="footer-container">
         <div className="ft-info">
@@ -114,6 +115,7 @@ function Footers() {
            Shubham
         </a>
       </div>
+    </div>
     </div>
   );
 }

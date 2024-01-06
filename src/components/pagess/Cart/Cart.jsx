@@ -3,6 +3,8 @@ import './Cart.css'; // Make sure the CSS file extension is correct
 import { NavLink } from "react-router-dom";
 import amount_context from "../../context/context";
 import cardimg from "./resources/413893816_881089357137408_3781618569609655013_n.jpg"
+import Navigation from "../../Navigation bar/navigation";
+import Footers from "../../Footer Bar/Footers";
 
 function Cart() {
   // calling the context elements 
@@ -25,6 +27,7 @@ function Cart() {
   })
   return (
     <>
+    <Navigation></Navigation>
       <div className="cart_section"> {/* Use className instead of class in React */}
         <div className="container-fluid">
           <div className="row">
@@ -81,6 +84,7 @@ function Cart() {
           </div>
         </div>
       </div>
+      <Footers></Footers>
     </>
   );
 }
